@@ -37,22 +37,12 @@ public class ShortestPathUsingBFS {
                 System.out.println("Shortest Distance from " + source + " to " + i + " = " + distanceArray[i]);
             }
         }
-
-        String encryptionKey = "Ab7Jklsdio&Y";
-        String encodedString = Base64.getEncoder().encodeToString((encryptionKey + "IN010M87645").getBytes());
-        System.out.println("Encoded String: " + encodedString);
-        byte[] decodedStringByte = Base64.getDecoder().decode(encodedString.getBytes());
-        String decodedString = new String(decodedStringByte);
-        System.out.println("Decoded String: " + decodedString);
     }
 
     private static void shortestPathUsingBFS(int source) {
         Queue<Integer> queue = new LinkedList<>();
         queue.add(source);
         distanceArray[source] = 0;
-        int i =010;
-        int j=07;
-        System.out.println(i + " -" + j + ";;;;");
 
         while (!queue.isEmpty()){
             int removedElement = queue.poll();
